@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="static/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='node_modules/bootstrap/dist/css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='node_modules/bootstrap/dist/css/bootstrap-theme.min.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}"/>
 
-    <script src="static/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="static/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='node_modules/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='node_modules/bootstrap/dist/js/bootstrap.min.js') }}"></script>
     <title>Vue Flask</title>
 </head>
 
@@ -99,9 +101,8 @@
     </div>
 </template>
 
-
-<script src="static/node_modules/vue/dist/vue.js"></script>
-<script src="static/node_modules/vue-resource/dist/vue-resource.min.js"></script>
-<script src="static/js/app.js"></script>
+<script src="{{ url_for('static', filename='node_modules/vue/dist/vue.js') }}"></script>
+<script src="{{ url_for('static', filename='node_modules/vue-resource/dist/vue-resource.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
 
 </html>
