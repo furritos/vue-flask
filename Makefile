@@ -1,8 +1,5 @@
 default: dev
 
-clean:
-	make -C app/static clean
-
 dev:
 	make -C app/static dev
 
