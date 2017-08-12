@@ -1,15 +1,6 @@
-CWD=$(shell pwd)
-ENV=$(CWD)/env
-
-default: dev $(ENV)
-
-$(ENV):
-	virtualenv -p python3 $(ENV)
-	$(ENV)/bin/pip install -r requirements.txt
-
+default: dev
 
 clean:
-	rm -Rf $(ENV) || true
 	make -C app/static clean
 
 dev:
@@ -18,9 +9,8 @@ dev:
 prod:
 	make -C app/static prod
 
-
 check:
-	PYTHONPATH=$(CWD) $(ENV)/bin/python -m unittest discover app/
+	python -m unittest discover app/
 
-run: $(ENV) prod
-	$(ENV)/bin/gunicorn --chdir app api:app --log-level debug
+run: prod
+	gunicorn --chdir app api:app --log-level debug
