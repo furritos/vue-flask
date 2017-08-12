@@ -163,6 +163,6 @@ ENV/
 # Start of user specific exclusions
 
 /app/static/node_modules/
-/app/static/node_modules/package-lock.json
+app/static/package-lock.json
 
 # End of user specific exclusions
