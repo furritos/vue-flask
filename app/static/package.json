@@ -1,10 +1,17 @@
 {
   "name": "vue-flask",
+  "description": "A Vue.js project",
   "version": "1.0.0",
+  "author": "carlos@riv.as",
   "devDependencies": {
     "bootstrap": "^3.3.7",
     "jquery": "2.2.4",
     "vue": "2.4.2",
     "vue-resource": "1.3.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/furritos/vue-flask.git"
+  },
+  "license": "MIT"
 }

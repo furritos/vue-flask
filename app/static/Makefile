@@ -2,7 +2,6 @@ CWD=$(shell pwd)
 
 NODE=$(CWD)/node_modules
 
-
 NPM_PACKAGES_JS = \
 	$(NODE)/jquery/dist/jquery \
 	$(NODE)/bootstrap/dist/js/bootstrap \
@@ -41,5 +40,9 @@ clean:
 
 fclean:
 	rm -rfv $(NODE)
+	if [ -a $(CWD)/package-lock.json ] ; \
+		then \
+	rm $(CWD)/package-lock.json ; \
+		fi;
 
 re: fclean npm
