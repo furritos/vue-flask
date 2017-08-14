@@ -1,10 +1,15 @@
 # Vue-Flask
 
-Quick Flask Dashboard using Vue.js, Python and Flask
-
+Quick Flask Dashboard using Vue.js, Python and Flask.
 
 ![preview](docs/preview.png)
 
+## Features
+
+* Heavy usage of Jinja2 templating and leverages heavy compartmentalization
+* Removed strict requirement of virutal environment and leaves that option to the end-user (highly advisable to use one, though)
+* Usage of a fixed top navigation bar in lieu of tabs
+* Updated versions of JavaScript components
 
 ## Stack
 
@@ -27,17 +32,13 @@ Quick Flask Dashboard using Vue.js, Python and Flask
 
     make
     
-
 #### Testing
     
     make check
 
-
 #### Gunicorn foreground
-    
-    
+        
     make run
-    
     
 ### Structure
     
