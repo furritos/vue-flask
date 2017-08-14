@@ -10,7 +10,7 @@ Quick Flask Dashboard using Vue.js, Python, Flask and Flask Bootstrap.
 * Removed strict requirement of virtual environment and leaves that option to the end-user
 * Usage of a fixed top navigation bar in lieu of tabs
 * Updated versions of JavaScript components
-* Handed over the responsibility of Bootstrap over to Flask
+* Handed over the responsibility of Bootstrap to Flask
 
 ## Stack
 
