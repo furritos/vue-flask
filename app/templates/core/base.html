@@ -1,18 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    {% include 'core/header/links.html' %}
+{%- extends "bootstrap/base.html" %}
+
+{% import "bootstrap/fixes.html" as fixes %}
+
+{% block title %}Vue Flask{% endblock %}
+
+{% block head %}
+    {{super()}}
+    {{fixes.ie8()}}
     {% include 'core/header/scripts.html' %}
-    <title>{% block title %}{% endblock %}</title>
-</head>
+{%- endblock %}
 
-<body>
-{% include 'core/navbar.html' %}
-{% block container %}
+{% block styles %}
+    {{ super() }}
+    {% include 'core/header/links.html' %}
 {% endblock %}
-</body>
 
+{% block navbar %}
+    {% include 'core/navbar.html' %}
+{% endblock %}
+
+{% block content %}
 <template id="template-one">
     <div class="row" style="margin-bottom: 2px">
         <div class="col-md-2"></div>
@@ -23,6 +30,9 @@
         </div>
     </div>
 </template>
+{% endblock %}
 
-{% include 'core/footer/scripts.html' %}
-</html>
+{% block scripts %}
+    {{ super() }}
+    {% include 'core/footer/scripts.html' %}
+{% endblock %}

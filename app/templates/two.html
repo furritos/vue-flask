@@ -1,6 +1,6 @@
-{% extends 'core/base.html' %}
+{%- extends 'core/base.html' %}
 {% set active_page = "two" %}
-{% block container %}
+{% block content %}
 <div class="container">
     <div class="row">
         <div class="col-sm-4"></div>
@@ -23,4 +23,5 @@
         </div>
     </div>
 </div>
+{{ super() }}
 {% endblock %}
