@@ -6,13 +6,13 @@
         <div class="col-sm-4">
             <div class="panel panel-primary text-center">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Server-side Timestamp</h3>
+                    <h3 class="panel-title">Page One Example</h3>
                 </div>
                 <div class="panel-body">
-                    <div id="app-zero">
-                      <span v-bind:ts="ts">
-                          <h2>{% raw %}{{ ts }}{% endraw %}</h2>
-                      </span>
+                    <div id="app-one">
+                        <div>
+                            <one-list v-for="item in one_list" v-bind:item="item"></one-list>
+                        </div>
                     </div>
                 </div>
             </div>

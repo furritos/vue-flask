@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% include 'core/header/links.html' %}
+    {% include 'core/header/scripts.html' %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+{% include 'core/navbar.html' %}
+{% block container %}
+{% endblock %}
+</body>
+
+<template id="template-one">
+    <div class="row" style="margin-bottom: 2px">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            {% raw %}
+            <p style="margin-bottom: 2px">{{ item }}</p>
+            {% endraw %}
+        </div>
+    </div>
+</template>
+
+{% include 'core/footer/scripts.html' %}
+</html>

@@ -13,5 +13,8 @@
     "type": "git",
     "url": "https://github.com/furritos/vue-flask.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "vue-router": "^2.7.0"
+  }
 }

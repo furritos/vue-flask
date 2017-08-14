@@ -18,7 +18,7 @@ var app_zero = new Vue({
                 });
         }
     },
-    mounted: function () {
+    created: function () {
         setInterval(this.fetchData,
         1000);
     }
@@ -39,7 +39,7 @@ var app_one = new Vue({
                 });
         }
     },
-    mounted: function () {
+    created: function () {
         this.fetchData();
     }
 });
@@ -59,7 +59,8 @@ var app_two = new Vue({
                 });
         }
     },
-    mounted: function () {
+    created: function () {
         this.fetchData();
     }
 });
+

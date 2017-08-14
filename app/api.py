@@ -15,8 +15,18 @@ cache = SimpleCache()
 
 
 @app.route("/")
-def index():
+def page_index_view():
     return render_template('index.html')
+
+
+@app.route("/one")
+def page_one_view():
+    return render_template('one.html')
+
+
+@app.route("/two")
+def page_two_view():
+    return render_template('two.html')
 
 
 @app.route("/api/one")
