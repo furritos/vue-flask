@@ -1,8 +1,7 @@
 import os
 import time
 
-from flask import Flask, jsonify
-from flask import render_template
+from flask import Flask, jsonify, render_template, request
 from werkzeug.contrib.cache import SimpleCache
 
 APP_ROOT_FOLDER = os.path.abspath(os.path.dirname(__file__))
